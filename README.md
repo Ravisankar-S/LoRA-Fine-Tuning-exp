@@ -3,7 +3,10 @@
 *A journey in parameter-efficient fine-tuning: From ambitious goals to practical solutions*
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![LoRA Fine-Tuning](https://img.shields.io/badge/PEFT-Fine--Tuning-pink?style=for-the-badgeor=white)](https://huggingface.co/docs/peft/en/index)
+[![LoRA Fine-Tuning](https://img.shields.io/badge/LoRa-Fine--Tuning-orange?style=for-the-badgeor=white)](https://huggingface.co/docs/peft/conceptual_guides/lora)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ##  Project Overview
 
