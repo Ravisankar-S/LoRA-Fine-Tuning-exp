@@ -5,11 +5,11 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🎯 Project Overview
+##  Project Overview
 
 This project demonstrates **LoRA (Low-Rank Adaptation)** for parameter-efficient fine-tuning. Through an iterative process of experimentation and refinement, it showcases both the **technical implementation of LoRA** and the **practical decision-making** required in real ML projects.
 
-## 📊 Final Results
+##  Final Results
 
 | Metric | Value |
 |--------|-------|
@@ -19,7 +19,7 @@ This project demonstrates **LoRA (Low-Rank Adaptation)** for parameter-efficient
 | **Parameters Trained** | 294,912 / 60,801,536 (0.48%) |
 | **Training Time** | ~2 minutes (GPU) |
 
-## 🛤️ Project Journey
+## Project Journey
 
 ### Initial Goal: Multi-field Food Extraction
 Initially aimed to extract structured food information (foods, drinks, categories) from text.
@@ -44,12 +44,12 @@ Simplified the task to: **"Is this text about food/drinks?"** → "yes" or "no"
 
 > **Key Learning:** In ML projects, matching task complexity to available data is crucial. A simpler task done well is more valuable than a complex task done poorly.
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/lora-food-classifier
-cd lora-food-classifier
+git clone https://github.com/Ravisankar-S/LoRA-Fine-Tuning-exp
+cd LoRA-Fine-Tuning-exp
 pip install -r requirements.txt
 ```
 
@@ -70,7 +70,7 @@ This compares the fine-tuned model against base T5-small to prove LoRA made a di
 python inference.py
 ```
 
-## 💡 Usage Example
+##  Usage Example
 ```python
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 from peft import PeftModel
@@ -91,7 +91,7 @@ print(classify("I had pizza for lunch"))        # → "yes"
 print(classify("I bought a new laptop"))        # → "no"
 ```
 
-## 🔬 Verification: Did Fine-Tuning Work?
+##  Verification: Did Fine-Tuning Work?
 
 Run `evaluate.py` to see side-by-side comparison:
 ```
@@ -111,7 +111,7 @@ FINE-TUNED MODEL (with LoRA):
 
 **Conclusion:** Fine-tuning clearly improved task-specific performance!
 
-## 🏗️ Technical Implementation
+##  Technical Implementation
 
 ### Architecture
 - **Base Model:** T5-Small (60M parameters)
@@ -150,7 +150,7 @@ LoraConfig(
 - **Learning Rate:** 3e-4
 - **Optimizer:** AdamW
 
-## 📈 Results
+##  Results
 
 ### Training Curve
 ```
@@ -169,7 +169,7 @@ Epoch  | Loss
 | Non-food | 71 | 94% |
 | **Overall** | **142** | **95%** |
 
-## 🎓 What This Project Demonstrates
+##  What This Project Demonstrates
 
 ### Technical Skills
 - ✅ LoRA implementation and configuration
@@ -191,7 +191,7 @@ Epoch  | Loss
 3. **Validate assumptions early:** Check data distribution before training
 4. **Engineering judgment matters:** Knowing when to simplify is a skill
 
-## 🔮 Future Extensions
+##  Future Extensions
 
 ### Short-term (Feasible)
 - [ ] Multi-label categories (breakfast, lunch, dinner)
@@ -203,7 +203,7 @@ Epoch  | Loss
 - [ ] Multi-lingual support
 - [ ] Nutritional information extraction
 
-## 📁 Project Structure
+##  Project Structure
 ```
 .
 ├── train.py              # Training script
@@ -216,7 +216,7 @@ Epoch  | Loss
 └── README.md
 ```
 
-## 🤔 Why Not Multi-Category Extraction?
+## Why Not Multi-Category Extraction?
 
 **Attempted:** Extract foods, drinks, and meal categories simultaneously
 
@@ -229,7 +229,7 @@ Epoch  | Loss
 
 **Learning:** In production ML, delivering a reliable 95% solution is better than an unreliable 75% solution with more features.
 
-## 📚 References
+## References
 
 - [LoRA Paper (Hu et al., 2021)](https://arxiv.org/abs/2106.09685)
 - [T5 Paper (Raffel et al., 2019)](https://arxiv.org/abs/1910.10683)

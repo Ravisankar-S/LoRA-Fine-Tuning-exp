@@ -99,7 +99,7 @@ def main():
     model = get_peft_model(model, lora_config)
     model.config.use_cache = False # type: ignore
     
-    print("\n   📊 Trainable Parameters:")
+    print("\n Trainable Parameters:")
     model.print_trainable_parameters()
     
     # Prepare training
