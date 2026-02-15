@@ -7,6 +7,20 @@
 [![LoRA Fine-Tuning](https://img.shields.io/badge/LoRa-Fine--Tuning-orange?style=for-the-badgeor=white)](https://huggingface.co/docs/peft/conceptual_guides/lora)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## 📋 Table of Contents
+- [Project Overview](#project-overview)
+- [Final Results](#final-results)
+- [Project Journey](#project-journey)
+- [Quick Start](#quick-start)
+- [Usage Example](#usage-example)
+- [Verification: Did Fine-Tuning Work?](#verification-did-fine-tuning-work)
+- [Stress Testing: Generalization & Context](#stress-testing-generalization--context)
+- [Technical Implementation](#technical-implementation)
+- [What This Project Demonstrates](#what-this-project-demonstrates)
+- [Project Structure](#project-structure)
+- [Why Not Multi-Category Extraction?](#why-not-multi-category-extraction)
+- [Author](#author)
+
 
 ##  Project Overview
 
