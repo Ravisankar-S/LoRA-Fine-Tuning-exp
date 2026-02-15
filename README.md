@@ -114,6 +114,31 @@ FINE-TUNED MODEL (with LoRA):
 
 **Conclusion:** Fine-tuning clearly improved task-specific performance!
 
+## 🧠 Stress Testing: Generalization & Context
+
+To ensure the model didn't just memorize keywords but actually learned to distinguish between food and non-food contexts, I ran several "Stress Tests." These include rare food items and "Tech Traps" where tech brands use fruit names.
+
+### 🍱 Test 1: The "New Menu" (Generalization)
+*Tests if the model recognizes food items not explicitly listed in the training set.*
+
+| Input | Result | Descriptor |
+|:---|:---:|:---|
+| "The sashimi was served with fresh wasabi." | **yes** | Recognizes niche/cultural items (Sashimi/Wasabi). |
+| "I grabbed a protein bar before the gym." | **yes** | Identifies modern, processed food items. |
+| "We ordered a Margherita with extra basil." | **yes** | Understands "Margherita" as a pizza, not just a name. |
+
+### 💻 Test 2: The "Tech Trap" (Context Awareness)
+*Tests if the model can distinguish between food-named tech brands and actual food.*
+
+| Input | Result | Descriptor |
+|:---|:---:|:---|
+| "I bought a new MacBook Pro at the Apple Store" | **no** | Correctly identifies "Apple" as a company here. |
+| "I am running a Raspberry Pi to host my server." | **no** | Recognizes "Raspberry Pi" as hardware, not a fruit. |
+| "The Apple was overpriced and had a bad battery." | **no** | Distinguishes brand context via "battery" keywords. |
+| "I went to the store to buy a toaster." | **no** | Correctly identifies a kitchen appliance as non-food. |
+
+> **Analysis:** The model successfully avoided the "keyword-matching" trap. Even when it saw words like "Apple" or "Raspberry," it used the surrounding context (battery, server, store) to make the correct classification.
+
 ##  Technical Implementation
 
 ### Architecture
