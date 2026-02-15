@@ -114,7 +114,7 @@ FINE-TUNED MODEL (with LoRA):
 
 **Conclusion:** Fine-tuning clearly improved task-specific performance!
 
-## 🧠 Stress Testing: Generalization & Context
+## Stress Testing: Generalization & Context
 
 To ensure the model didn't just memorize keywords but actually learned to distinguish between food and non-food contexts, I ran several "Stress Tests." These include rare food items and "Tech Traps" where tech brands use fruit names.
 
