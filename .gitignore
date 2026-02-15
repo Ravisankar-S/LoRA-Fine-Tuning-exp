@@ -1,3 +1,31 @@
+# Notebooks
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Models (too large for git)
+food_classifier/
+simple_classifier/
+*.bin
+*.safetensors
+*.h5
+
+# Training outputs
+results/
+outputs/
+runs/
+wandb/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
